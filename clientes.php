@@ -5,6 +5,7 @@ $TAMANO_PAGINA = 10;
 $url="index.php?op=clientes";
 //examino la página a mostrar y el inicio del registro a mostrar
 
+//CICLO IF
 if(isset($_GET['pagina'])){
 $pagina = $_GET['pagina'];
 $inicio = ($pagina - 1) * $TAMANO_PAGINA;
@@ -13,6 +14,9 @@ $inicio = ($pagina - 1) * $TAMANO_PAGINA;
    $inicio = 0;
    $pagina = 1;	
 }    
+
+//CICLO IF
+
 
 if(isset($_GET['b'])){$b=$_GET['b'];}else{$b="";}
 
